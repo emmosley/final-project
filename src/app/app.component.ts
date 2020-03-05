@@ -8,10 +8,12 @@ import {ApiService } from './api.service';
 })
 export class AppComponent {
   data = null;
+  
   constructor(private apiService: ApiService) {}
   title = 'final-project';
   ngOnInit() {
-  this.data = this.apiService.getList().subscribe((data) => console.log(data));
+  this.data = this.apiService.getList().subscribe((data) => this.data = data);
+  // console.log(this.data);
 }
 }
 
