@@ -28,21 +28,7 @@ import { DetailsComponent } from './details/details.component';
 })
 export class AppModule { }
 
-const appRoutes: Routes = [
-  { path: 'crisis-center', component: CrisisListComponent },
-  { path: 'hero/:id',      component: HeroDetailComponent },
-  {
-    path: 'heroes',
-    component: HeroListComponent,
-    data: { title: 'Heroes List' }
-  },
-  { path: '',
-    redirectTo: '/heroes',
-    pathMatch: 'full'
-  },
-  { path: '**', component: PageNotFoundComponent }
-];
-
+c
 @NgModule({
   imports: [
     RouterModule.forRoot(
