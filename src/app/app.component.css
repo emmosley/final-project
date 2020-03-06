@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    list-style: none;
+  }
+  
+  .links li {
+    display: inline;
+    padding:  0px 20px;
+  }
+  
+  .links li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .links li a:hover {
+    color: blue;
+  }
