@@ -28,15 +28,3 @@ import { DetailsComponent } from './details/details.component';
 })
 export class AppModule { }
 
-c
-@NgModule({
-  imports: [
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
-    // other imports here
-  ],
-  ...
-})
-export class AppModule { }
