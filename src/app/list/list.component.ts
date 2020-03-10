@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FavoriteService } from '../favorite.service';
 
 @Component({
   selector: 'app-list',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  constructor() { }
+  constructor(public favs: FavoriteService) { }
 
   ngOnInit() {
-  }
 
+  }
+ 
 }

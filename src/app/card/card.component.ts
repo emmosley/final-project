@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
+import {FavoriteService } from '../favorite.service';
 
 @Component({
   selector: 'app-card',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  constructor(public favs: FavoriteService ) { }
 
   ngOnInit() {
+  }
+  swipeRight(ein: number){
+    this.favs.addFavorites(ein);
   }
 
 }
