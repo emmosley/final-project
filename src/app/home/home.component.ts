@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
+import { prepareEventListenerParameters } from '@angular/compiler/src/render3/view/template';
 
 
 @Component({
@@ -18,6 +19,11 @@ data = null;
       this.data = data;
       console.log(this.data);
     });
+
+  }
+
+  searchFunction(zip) {
+    console.log(zip);
 
   }
 

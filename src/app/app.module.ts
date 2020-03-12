@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-// import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
@@ -12,7 +11,11 @@ import { DetailsComponent } from './details/details.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatInputModule } from '@angular/material/input';
 import { HeaderComponent } from './header/header.component';
-// import { RouterModule } from '@angular/router'
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+
 
 
 @NgModule({
@@ -23,8 +26,7 @@ import { HeaderComponent } from './header/header.component';
     ListComponent,
     DetailsComponent,
     HeaderComponent
-    
-
+   
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,11 @@ import { HeaderComponent } from './header/header.component';
     MatSliderModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,
+    MatIconModule,
+    MatButtonModule,
+    MatButtonToggleModule
 
   ],
   providers: [],
