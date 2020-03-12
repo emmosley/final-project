@@ -8,13 +8,19 @@ import {FavoriteService } from '../favorite.service';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-
-  constructor(public favs: FavoriteService ) { }
-
+  charityData;
+  data = null;
+  constructor(public favs: FavoriteService, public apiService: ApiService ) { }
+  // causeUrl = "https://api.data.charitynavigator.org/v2/Organizations?app_id=0e8799c4&app_key=673f09ef0609a336db46bd2cc7630d6e&categoryID=6";
   ngOnInit() {
+    this.data = this.apiService.getRandomCause().subscribe((data) => this.data = data);
   }
-  swipeRight(ein: number){
-    this.favs.addFavorites(ein);
+  swipeRight(){
+    //api call store response in array
+   this.charityData = this.apiService.getRandomCause();
+   console.log(this.charityData);
+    //  let charityType = this.favs.addFavorites(this.causeUrl[index]);
+  //   console.log(charityType);
   }
 
 }

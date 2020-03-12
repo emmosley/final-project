@@ -5,10 +5,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class FavoriteService {
-favorites = [];
+charityArray = [];
   constructor() { }
   
-  addFavorites(id) {
-    this.favorites.push(id);
+  addFavorites(cause) {
+    this.charityArray.push(cause);
   }
 }

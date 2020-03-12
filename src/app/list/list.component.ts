@@ -7,11 +7,12 @@ import { FavoriteService } from '../favorite.service';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-
+  likedCharities = [];
   constructor(public favs: FavoriteService) { }
 
   ngOnInit() {
-
+    this.likedCharities = this.favs.charityArray;
+    return this.likedCharities;
   }
  
 }
