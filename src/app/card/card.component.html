@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <app-header></app-header>
 <div class="app-container"><div class="card-container"><mat-card class="example-card">
     <!-- <mat-card-header>
@@ -18,3 +19,14 @@
       <mat-icon>favorite</mat-icon></button>
     </mat-card-actions></div>
   </mat-card></div></div>
+=======
+<a routerLink="/list">list</a>
+
+<div *ngFor="let cause of data, let i = index">
+    {{ cause.charityName }}
+    {{ cause.cause.causeName }} <button (click)="swipeRight(cause)">add favorite</button>
+ </div>
+
+
+
+>>>>>>> favoritingMethod
