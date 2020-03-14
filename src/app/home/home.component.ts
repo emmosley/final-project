@@ -11,7 +11,7 @@ import { ApiService } from '../api.service';
 })
 export class HomeComponent implements OnInit {
 data = null;
-stateSearch
+stateSearch;
 
   constructor(private apiService: ApiService) { }
 
