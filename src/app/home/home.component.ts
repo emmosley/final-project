@@ -20,7 +20,7 @@ stateSearch;
       this.data = data;
       console.log(this.data);
 
-      this.apiService.getByState.subscribe(data)
+      this.apiService.getByState().subscribe()
     });
 
 
