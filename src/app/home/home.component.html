@@ -7,7 +7,8 @@
         <form class="form">
           <mat-form-field class="full-width">
             <mat-label>Enter State</mat-label>
-            <input matInput #search placeholder="Enter your State" />
+            <input matInput #search placeholder="Enter your State" maxlength="2"/>
+            <mat-hint align="end">ex. MI, FL, GA</mat-hint>
           </mat-form-field><button (click)="searchFunction(search.value)" mat-raised-button color="primary"
             [routerLink]="['/card']">
             SUBMIT

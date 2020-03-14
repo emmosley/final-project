@@ -1,7 +1,13 @@
 <app-header></app-header>
-   <ul>
-        <li *ngFor="let charity of likedCharities, let i = index">
-        {{ charity.organization.charityName }}  
-       </li>
-   </ul>
-
+<table>
+  <tr>
+    <th>Name</th>
+    <th>EIN</th>
+    <th>Website</th>
+  </tr>
+  <tr *ngFor="let charity of likedCharities, let i = index">
+    <td>{{ charity.organization.charityName }}</td>
+    <td>{{ charity.organization.ein }}</td>
+    <td>{{ charity.websiteURL }}</td>
+  </tr>
+</table>

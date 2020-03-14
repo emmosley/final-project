@@ -24,9 +24,9 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
   getList = () => this.http.get(this.apiUrl);
-  getCharitiesForCause = (causeId) => {
+  getCharitiesForCause = () => {
     // TODO - build URL using causeId param
-    let causeUrl = `https://api.data.charitynavigator.org/v2/Organizations?app_key=673f09ef0609a336db46bd2cc7630d6e&app_id=0e8799c4&causeID=${causeId}&state=${this.stateID}`;
+    let causeUrl = `https://api.data.charitynavigator.org/v2/Organizations?app_key=673f09ef0609a336db46bd2cc7630d6e&app_id=0e8799c4&causeID=${this.causeNumber}&state=${this.stateID}`;
     return this.http.get(causeUrl);
   }
 
@@ -35,7 +35,7 @@ export class ApiService {
     let causeNumber = this.causeIdOptions[Math.floor(Math.random() * this.causeIdOptions.length)];
     return this.http.get(this.categoriesURL).pipe(
       map(categories => {
-        return categories[0].causes[0]
+        return categories[0].causes[0];
       })
     );
     // pick random id from list
