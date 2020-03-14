@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
-import { prepareEventListenerParameters } from '@angular/compiler/src/render3/view/template';
+
 
 
 @Component({
@@ -11,6 +11,7 @@ import { prepareEventListenerParameters } from '@angular/compiler/src/render3/vi
 })
 export class HomeComponent implements OnInit {
 data = null;
+stateSearch
 
   constructor(private apiService: ApiService) { }
 
@@ -18,12 +19,15 @@ data = null;
     this.data = this.apiService.getList().subscribe((data) => {
       this.data = data;
       console.log(this.data);
+
+      this.apiService.getByState.subscribe(data)
     });
 
+
+    
   }
 
-  searchFunction(zip) {
-    console.log(zip);
+  searchFunction(state) {
 
   }
 

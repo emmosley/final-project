@@ -8,10 +8,9 @@
                     <form class="form">
                        
                             <mat-form-field class="full-width" >
-                            <mat-label>Zip code</mat-label>
-                            <input matInput #search maxlength="5" placeholder="Enter your Zip Code">
+                            <mat-label>State</mat-label>
+                            <input matInput #search placeholder="Enter your State">
                             <!-- <mat-hint align="start"><strong>Get Started</strong> </mat-hint> -->
-                            <mat-hint align="end">{{search.value.length}} / 5</mat-hint>
                         
                             </mat-form-field><button (click)="searchFunction(search.value)" mat-raised-button color="primary" [routerLink]="['/card']">SUBMIT</button>
                     </form>
