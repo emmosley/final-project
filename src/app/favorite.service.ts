@@ -8,8 +8,10 @@ export class FavoriteService {
 charityArray = [];
   constructor() { }
   
-  addFavorites(cause) {
-    this.charityArray.push(cause);
+  addFavorites(newCharities) {
+    for (const charity of newCharities) {
+      this.charityArray.push(charity);
+    }
     console.log(this.charityArray);
   }
 }

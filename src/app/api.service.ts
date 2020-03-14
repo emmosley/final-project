@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { $ } from 'protractor';
+import { map } from 'rxjs/operators';
+
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +23,23 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
   getList = () => this.http.get(this.apiUrl);
-  getRandomCause = () => this.http.get(this.causeUrl);
+  getCharitiesForCause = (causeId) => {
+    // TODO - build URL using causeId param
+    let causeUrl = `https://api.data.charitynavigator.org/v2/Organizations?app_key=673f09ef0609a336db46bd2cc7630d6e&app_id=0e8799c4&causeID=${causeId}`
+    return this.http.get(causeUrl);
+  }
   // getCategoriesList = () => this.http.get(this.categoryUrl);
+  getRandomCause = () => {
+    let causeNumber = this.causeIdOptions[Math.floor(Math.random() * this.causeIdOptions.length)];
+    return this.http.get(this.categoriesURL).pipe(
+      map(categories => {
+        return categories[0].causes[0]
+      })
+    );
+    // pick random id from list
+    // call categories API, find the cause in that JSON, return that.
+  }
+
+
 
 }

@@ -12,14 +12,16 @@ import {FavoriteService } from '../favorite.service';
 export class CardComponent implements OnInit {
   charityData;
   data = null;
+  cause = null;
   constructor(public favs: FavoriteService, public apiService: ApiService ) { }
   // causeUrl = "https://api.data.charitynavigator.org/v2/Organizations?app_id=0e8799c4&app_key=673f09ef0609a336db46bd2cc7630d6e&categoryID=6";
   ngOnInit() {
-    this.apiService.getRandomCause().subscribe((data) => this.data = data);
+    this.apiService.getRandomCause().subscribe((cause) => this.cause = cause);
+    //TODO get random cause, set this.cause { causeID: 5 }
   }
   swipeRight(){
     //api call store response in array
-   this.apiService.getRandomCause().subscribe((charityData) => {
+   this.apiService.getCharitiesForCause(this.cause.causeID).subscribe((charityData) => {
      this.charityData = charityData;
      this.favs.addFavorites(charityData);
     }
