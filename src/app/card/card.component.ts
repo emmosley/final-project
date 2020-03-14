@@ -17,8 +17,11 @@ export class CardComponent implements OnInit {
   }
   swipeRight(){
     //api call store response in array
-   this.apiService.getRandomCause().subscribe((charityData) => this.charityData = charityData);
-   console.log(this.charityData);
+   this.apiService.getRandomCause().subscribe((charityData) => {
+     this.charityData = charityData;
+     this.favs.addFavorites(charityData);
+    }
+     );
     //  let charityType = this.favs.addFavorites(this.causeUrl[index]);
   //   console.log(charityType);
   }

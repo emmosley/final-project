@@ -1,3 +1,5 @@
+<a routerLink="/list">list</a>
+
 <div *ngFor="let cause of data, let i = index">
     {{ cause.charityName }}
     {{ cause.cause.causeName }} <button (click)="swipeRight(cause)">add favorite</button>

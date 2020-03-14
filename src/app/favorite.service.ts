@@ -10,5 +10,6 @@ charityArray = [];
   
   addFavorites(cause) {
     this.charityArray.push(cause);
+    console.log(this.charityArray);
   }
 }

@@ -12,7 +12,7 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
     this.likedCharities = this.favs.charityArray;
-    return this.likedCharities;
+    console.log(this.likedCharities);
   }
  
 }
