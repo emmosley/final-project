@@ -11,6 +11,7 @@ import { prepareEventListenerParameters } from '@angular/compiler/src/render3/vi
 })
 export class HomeComponent implements OnInit {
 data = null;
+state;
 
   constructor(private apiService: ApiService) { }
 
@@ -22,9 +23,9 @@ data = null;
 
   }
 
-  searchFunction(zip) {
-    console.log(zip);
-
+  searchFunction(state) {
+    this.apiService.stateID = state;
+    console.log(state);
   }
 
 }

@@ -1,25 +1,24 @@
+<app-header></app-header>
 
-  <app-header></app-header>
-  
-    <div class="app-container">
-        <div class="container">
-            <div class="home-search">
-                <div class="search">
-                    <form class="form">
-                       
-                            <mat-form-field class="full-width" >
-                            <mat-label>Zip code</mat-label>
-                            <input matInput #search maxlength="5" placeholder="Enter your Zip Code">
-                            <!-- <mat-hint align="start"><strong>Get Started</strong> </mat-hint> -->
-                            <mat-hint align="end">{{search.value.length}} / 5</mat-hint>
-                        
-                            </mat-form-field><button (click)="searchFunction(search.value)" mat-raised-button color="primary" [routerLink]="['/card']">SUBMIT</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="home-search"><button mat-raised-button color="primary">Take My Money</button>
-            </div>
-        </div>
+<div class="app-container">
+  <div class="container">
+    <div class="home-search">
+      <div class="search">
+        <form class="form">
+          <mat-form-field class="full-width">
+            <mat-label>Enter State</mat-label>
+            <input matInput #search placeholder="Enter your State" />
+          </mat-form-field><button (click)="searchFunction(search.value)" mat-raised-button color="primary"
+            [routerLink]="['/card']">
+            SUBMIT
+          </button>
+        </form>
+      </div>
     </div>
+  </div>
+  <div class="container">
+    <div class="home-search">
+      <button mat-raised-button color="primary">Take My Money</button>
+    </div>
+  </div>
+</div>
