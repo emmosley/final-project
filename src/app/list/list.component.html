@@ -8,6 +8,6 @@
   <tr *ngFor="let charity of likedCharities, let i = index">
     <td>{{ charity.organization.charityName }}</td>
     <td>{{ charity.organization.ein }}</td>
-    <td>{{ charity.websiteURL }}</td>
+    <td><a href="{{ charity.websiteURL }}">{{ charity.organization.charityName }}'s Website</a></td>
   </tr>
 </table>
