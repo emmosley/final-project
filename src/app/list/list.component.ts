@@ -8,6 +8,7 @@ import { FavoriteService } from '../favorite.service';
 })
 export class ListComponent implements OnInit {
   likedCharities = [];
+  selectedFavorite = [];
   constructor(public favs: FavoriteService) { }
 
   ngOnInit() {
@@ -15,4 +16,10 @@ export class ListComponent implements OnInit {
     console.log(this.likedCharities);
   }
  
+
+  selectFavorite(charity) {
+    this.selectedFavorite = this.favs.selectedFavorite;
+    this.favs.selectedFavorite.push(charity);
+    console.log(this.favs.selectedFavorite);
+  }
 }
