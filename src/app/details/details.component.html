@@ -3,7 +3,7 @@
 <div class="app-container">
     <div class="container">
     </div>
-    </div>
+  
 <h1 class="">Favorited Charities</h1>
 <table>
     <tr>
@@ -16,6 +16,7 @@
       <td>{{ favorite.organization.charityName }}</td>
       <td>{{ favorite.organization.ein }}</td>
       <td><a href="{{ favorite.websiteURL }}">{{ favorite.organization.charityName }}'s Website</a></td>
-      <td>{{ charity.mailingAddress.stateOrProvince }}</td>
+      <td>{{ favorite.mailingAddress.stateOrProvince }}</td>
     </tr>
 </table>
+</div>
