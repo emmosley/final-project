@@ -7,12 +7,14 @@
 <h1 class="">Favorited Charities</h1>
 <table>
     <tr>
+      <th>Cause</th>
       <th>Name</th>
       <th>EIN</th>
       <th>Website</th>
       <th>State</th>
     </tr>
     <tr *ngFor="let favorite of favoriteCharity, let i = index">
+      <td>{{ favorite.cause.causeName }}</td>
       <td>{{ favorite.organization.charityName }}</td>
       <td>{{ favorite.organization.ein }}</td>
       <td><a href="{{ favorite.websiteURL }}">{{ favorite.organization.charityName }}'s Website</a></td>
