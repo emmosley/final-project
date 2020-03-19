@@ -132,12 +132,12 @@ export class CardComponent implements OnInit {
     {
       causeID: 32,
       causeName: "Zoos and Aquariums",
-      img: ""
+      img: "/assets/images/zoo-cat.jpg"
         },
     {
       causeID: 1,
       causeName: "Wildlife Conservation",
-      img: ""
+      img: "/assets/images/wildlife-cat.jpg"
         },  
     {
       causeID: 2,
