@@ -12,18 +12,226 @@ import {FavoriteService } from '../favorite.service';
 export class CardComponent implements OnInit {
   causes = [
     {
-      causeID: 11,
-      img: "https://ruinmyweek.com/wp-content/uploads/2020/01/qRpo7BE.jpg"
+      causeID: 17,
+      causeName: "Children's and Family Services",
+      img: "/assets/images/KIDSANDCATS.jpg"
     },
     {
-      causeID: 12,
-      img: "https://starecat.com/content/wp-content/uploads/me-laughing-at-corona-virus-memes-it-is-now-in-europe-in-my-country-in-my-city.jpg"
+      causeID: 28,
+      causeName: "Homeless Services",
+      img: "/assets/images/homeless-cat.jpg"
+    },{
+      causeID: 44,
+      causeName: "Rescue Missions",
+      img: "/assets/images/rescue-cat.jpg"
+    },{
+      causeID: 16,
+      causeName: "Youth Development, Shelter, and Crisis Services",
+      img: ""
     },
+    {
+      causeID: 15,
+      causeName: "Multipurpose Human Service Organizations",
+      img: ""    
+    },
+    {
+      causeID: 18,
+      causeName: "Food Banks, Food Pantries, and Food Distribution",
+      img: ""    
+    },
+    {
+      causeID: 29,
+      causeName: "Social Services",
+      img: ""
+        },  
+         {
+      causeID: 37,
+      causeName: "Scholarship and Financial Support",
+      img: ""
+    },
+    {
+      causeID: 33,
+      causeName: "Private Liberal Arts Colleges",
+      img: ""
+    },   
+    {
+      causeID: 41,
+      causeName: "Education Policy and Reform",
+      img: ""
+        },  
+     {
+      causeID: 49,
+      causeName: "Youth Education Programs and Services",
+      img: ""
+        },   
+    {
+      causeID: 38,
+      causeName: "Special Education",
+      img: "/assets/images/special-needs-cat.jpg"
+    },   
+    {
+      causeID: 9,
+      causeName: "Universities, Graduate Schools, and Technological Institutes",
+      img: ""
+        },
+    {
+      causeID: 39,
+      causeName: "Adult Education Programs and Services",
+      img: ""
+        },
+    {
+      causeID: 7,
+      causeName: "Other Education Programs and Services",
+      img: ""
+        },
+    {
+      causeID: 8,
+      causeName: "Private Elementary & Secondary Schools",
+      img: ""
+        },
+    {
+      causeID: 36,
+      causeName: "Early Childhood Programs and Services",
+      img: ""
+        },
+    {
+      causeID: 19,
+      causeName: "International Peace, Security, and Affairs",
+      img: ""
+        },
+    {
+      causeID: 20,
+      causeName: "Development and Relief Services",
+      img: ""
+        },
+    {
+      causeID: 30,
+      causeName: "Humanitarian Relief Supplies",
+      img: ""
+        },
+    {
+      causeID: 31,
+      causeName: "Foreign Charity Support Organizations",
+      img: ""
+        },
+    {
+      causeID: 21,
+      causeName: "Advocacy and Education",
+      img: ""
+        },
+    {
+      causeID: 25,
+      causeName: "Religious Media and Broadcasting",
+      img: ""
+        },
+    {
+      causeID: 26,
+      causeName: "Religious Activities",
+      img: ""
+        },
     {
       causeID: 32,
-      img: "https://i.chzbgr.com/full/8971143680/hEC8382C3/%22"
+      causeName: "Zoos and Aquariums",
+      img: ""
+        },
+    {
+      causeID: 1,
+      causeName: "Wildlife Conservation",
+      img: ""
+        },  
+    {
+      causeID: 2,
+      causeName: "Animal Rights, Welfare, and Services",
+      img: ""
+        },
+    {
+      causeID: 6,
+      causeName: "Libraries, Historical Societies and Landmark Preservation",
+      img: ""
+        },
+    {
+      causeID: 3,
+      causeName: "Museums",
+      img: ""
+        },  
+    {
+      causeID: 4,
+      causeName: "Performing Arts",
+      img: ""
+        },
+    {
+      causeID: 5,
+      causeName: "Public Broadcasting and Media",
+      img: ""
+        },
+    {
+      causeID: 10,
+      causeName: "Botanical Gardens, Parks, and Nature Centers",
+      img: ""
+        },
+    {
+      causeID: 11,
+      causeName: "Environmental Protection and Conservation",
+      img: ""
+        },
+    {
+      causeID: 34,
+      causeName: "Patient and Family Support",
+      img: ""
+        },
+    {
+      causeID: 13,
+      causeName: "Diseases, Disorders, and Disciplines",
+      img: ""
+        },
+    {
+      causeID: 12,
+      causeName: "Treatment and Prevention Services",
+      img: ""
+        },
+    {
+      causeID: 14,
+      causeName: "Medical Research",
+      img: ""
+        },
+    {
+      causeID: 22,
+      causeName: "Community Foundations",
+      img: ""
+        },
+    {
+      causeID: 23,
+      causeName: "Fundraising",
+      img: ""
+        },
+    {
+      causeID: 27,
+      causeName: "Housing and Neighborhood Development",
+      img: ""
+        },
+    {
+      causeID: 42,
+      causeName: "United Ways",
+      img: ""
+        },
+    {
+      causeID: 43,
+      causeName: "Jewish Federations",
+      img: ""
+        },    
+  ];
+  shuffle = (a) => {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
     }
-  ];charityData;
+    return a;
+}
+  causeArray = this.shuffle(this.causes);
+  charityData;
   data = null;
   cause = null;
   constructor(public favs: FavoriteService, public apiService: ApiService ) { }
