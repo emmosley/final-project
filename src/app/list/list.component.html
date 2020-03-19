@@ -1,16 +1,20 @@
 <app-header></app-header>
 <div class="app-container">
   <div class="container">
+<button routerLink="/details">Favorites</button>
 <table>
   <tr>
     <th>Name</th>
     <th>EIN</th>
     <th>Website</th>
+    <th>State</th>
   </tr>
   <tr *ngFor="let charity of likedCharities, let i = index">
     <td>{{ charity.organization.charityName }}</td>
     <td>{{ charity.organization.ein }}</td>
     <td><a href="{{ charity.websiteURL }}">{{ charity.organization.charityName }}'s Website</a></td>
+    <td>{{ charity.mailingAddress.stateOrProvince }}</td>
+    <button><mat-icon color="warn" (click)="selectFavorite(charity)">favorite</mat-icon></button>
   </tr>
 </table>
 </div>

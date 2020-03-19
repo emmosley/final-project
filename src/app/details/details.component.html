@@ -4,3 +4,18 @@
     <div class="container">
     </div>
     </div>
+<h1 class="">Favorited Charities</h1>
+<table>
+    <tr>
+      <th>Name</th>
+      <th>EIN</th>
+      <th>Website</th>
+      <th>State</th>
+    </tr>
+    <tr *ngFor="let favorite of favoriteCharity, let i = index">
+      <td>{{ favorite.organization.charityName }}</td>
+      <td>{{ favorite.organization.ein }}</td>
+      <td><a href="{{ favorite.websiteURL }}">{{ favorite.organization.charityName }}'s Website</a></td>
+      <td>{{ charity.mailingAddress.stateOrProvince }}</td>
+    </tr>
+</table>

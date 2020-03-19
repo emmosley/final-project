@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class FavoriteService {
 charityArray = [];
+selectedFavorite = [];
   constructor() { }
   
   addFavorites(newCharities) {
