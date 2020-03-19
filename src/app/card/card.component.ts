@@ -14,7 +14,7 @@ export class CardComponent implements OnInit {
     {
       causeID: 17,
       causeName: "Children's and Family Services",
-      img: "/assets/images/KIDSANDCATS.jpg"
+      img: "/assets/images/kids-and-cats.jpg"
     },
     {
       causeID: 28,
@@ -27,7 +27,7 @@ export class CardComponent implements OnInit {
     },{
       causeID: 16,
       causeName: "Youth Development, Shelter, and Crisis Services",
-      img: ""
+      img: "/assets/images/elementary-cat.jpg"
     },
     {
       causeID: 15,
@@ -72,12 +72,12 @@ export class CardComponent implements OnInit {
     {
       causeID: 9,
       causeName: "Universities, Graduate Schools, and Technological Institutes",
-      img: ""
+      img: "/assets/images/university-cat.jpg"
         },
     {
       causeID: 39,
       causeName: "Adult Education Programs and Services",
-      img: ""
+      img: "/assets/images/adult-study-cat.jpg"
         },
     {
       causeID: 7,
@@ -147,7 +147,7 @@ export class CardComponent implements OnInit {
     {
       causeID: 6,
       causeName: "Libraries, Historical Societies and Landmark Preservation",
-      img: ""
+      img: "/assets/images/library-cat.jpg"
         },
     {
       causeID: 3,
@@ -221,7 +221,7 @@ export class CardComponent implements OnInit {
         },    
   ];
   shuffle = (a) => {
-    var j, x, i;
+    let j, x, i;
     for (i = a.length - 1; i > 0; i--) {
         j = Math.floor(Math.random() * (i + 1));
         x = a[i];

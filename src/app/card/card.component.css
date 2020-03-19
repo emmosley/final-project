@@ -13,3 +13,14 @@
     justify-content: space-evenly;
     
 }
+/* .causeImage {
+  width: 300px;
+} */
+/* .example-card{
+  width: 65%;
+} */
+@media (min-width: 960px) {
+	.example-card{
+    width: 500px;
+  }
+}

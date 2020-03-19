@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai|Poppins&display=swap');
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; 
+    font-family: 'Hind Madurai', sans-serif;
+}
 
 .app-container {
-
     display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -25,9 +26,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
         max-width: 100%;
         padding: 20px;
         margin: 0 auto;
+        font-family: 'Hind Madurai', sans-serif;
     }
 .card-container {
-     
+        padding: none;
     }
 
 .search {
@@ -40,7 +42,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+    
 }
 
 

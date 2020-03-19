@@ -1,13 +1,15 @@
 <app-header></app-header>
-<div class="app-container"><div class="card-container"><mat-card class="example-card">
+<div class="app-container">
+  <div class="card-container">
+    <mat-card class="example-card">
      <mat-card-header>
       
       <mat-card-title>{{causes[0].causeName}}</mat-card-title>
     </mat-card-header> 
-    <img mat-card-image src={{causes[0].img}} alt="">
+    <!-- <img mat-card-image src={{causes[0].img}} alt="{{causes[0].causeName}}" class="causeImage"> -->
     <mat-card-content>
-      <p>
-        
+      <p class="cardImageHolder">
+        <img mat-card-image src={{causes[0].img}} alt="{{causes[0].causeName}}" class="causeImage">
       </p>
     </mat-card-content>
     <div class="favorite_container"><mat-card-actions >
