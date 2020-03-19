@@ -32,12 +32,12 @@ export class CardComponent implements OnInit {
     {
       causeID: 15,
       causeName: "Multipurpose Human Service Organizations",
-      img: ""    
+      img: "/assets/images/service-cat.jpg"    
     },
     {
       causeID: 18,
       causeName: "Food Banks, Food Pantries, and Food Distribution",
-      img: ""    
+      img: "/assets/images/food-cat.jpg"    
     },
     {
       causeID: 29,
