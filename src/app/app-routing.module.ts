@@ -10,9 +10,9 @@ import { ListComponent } from './list/list.component';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },  
-    { path: 'card', component: CardComponent },
-    { path: 'details', component: DetailsComponent },
-    { path: 'list', component: ListComponent },
+    { path: 'causes', component: CardComponent },
+    { path: 'favorites', component: DetailsComponent },
+    { path: 'charities', component: ListComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '**', component: HomeComponent }
   

@@ -10,7 +10,20 @@ import {FavoriteService } from '../favorite.service';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  charityData;
+  causes = [
+    {
+      causeID: 11,
+      img: "https://ruinmyweek.com/wp-content/uploads/2020/01/qRpo7BE.jpg"
+    },
+    {
+      causeID: 12,
+      img: "https://starecat.com/content/wp-content/uploads/me-laughing-at-corona-virus-memes-it-is-now-in-europe-in-my-country-in-my-city.jpg"
+    },
+    {
+      causeID: 32,
+      img: "https://i.chzbgr.com/full/8971143680/hEC8382C3/%22"
+    }
+  ];charityData;
   data = null;
   cause = null;
   constructor(public favs: FavoriteService, public apiService: ApiService ) { }
@@ -29,5 +42,8 @@ export class CardComponent implements OnInit {
     //  let charityType = this.favs.addFavorites(this.causeUrl[index]);
   //   console.log(charityType);
   }
-
+  dislike() {
+    this.causes.splice(0,1);
+    console.log(this.causes);
+  }
 }
