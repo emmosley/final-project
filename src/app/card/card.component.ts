@@ -242,13 +242,17 @@ export class CardComponent implements OnInit {
   }
   swipeRight(){
     //api call store response in array
-   this.apiService.getCharitiesForCause().subscribe((charityData) => {
+    this.apiService.getCharitiesForCause(this.causes[0].causeID).subscribe((charityData) => {
      this.charityData = charityData;
      this.favs.addFavorites(charityData);
     }
      );
+
     //  let charityType = this.favs.addFavorites(this.causeUrl[index]);
   //   console.log(charityType);
+
+    this.causes.splice(0,1);
+    console.log(this.causes);
   }
   dislike() {
     this.causes.splice(0,1);
