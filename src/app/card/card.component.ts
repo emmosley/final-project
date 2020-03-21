@@ -27,7 +27,7 @@ export class CardComponent implements OnInit {
     },{
       causeID: 16,
       causeName: "Youth Development, Shelter, and Crisis Services",
-      img: "/assets/images/elementary-cat.jpg"
+      img: "/assets/images/development-cat.jpg"
     },
     {
       causeID: 15,
@@ -42,27 +42,27 @@ export class CardComponent implements OnInit {
     {
       causeID: 29,
       causeName: "Social Services",
-      img: ""
+      img: "/assets/images/meeting-cat.jpg"
         },  
          {
       causeID: 37,
       causeName: "Scholarship and Financial Support",
-      img: ""
+      img: "/assets/images/scholarship-cat.jpg"
     },
     {
       causeID: 33,
       causeName: "Private Liberal Arts Colleges",
-      img: ""
+      img: "/assets/images/private-school-cat.jpg"
     },   
     {
       causeID: 41,
       causeName: "Education Policy and Reform",
-      img: ""
+      img: "/assets/images/education-reform-cat.jpg"
         },  
      {
       causeID: 49,
       causeName: "Youth Education Programs and Services",
-      img: ""
+      img: "/assets/images/elementary-cat.jpg"
         },   
     {
       causeID: 38,
@@ -82,52 +82,52 @@ export class CardComponent implements OnInit {
     {
       causeID: 7,
       causeName: "Other Education Programs and Services",
-      img: ""
-        },
+      img: "/assets/images/pencil-cat.jpg"
+      },
     {
       causeID: 8,
       causeName: "Private Elementary & Secondary Schools",
-      img: ""
-        },
+      img: "/assets/images/school-kitten-cat.jpg"
+      },
     {
       causeID: 36,
       causeName: "Early Childhood Programs and Services",
-      img: ""
+      img: "/assets/images/baby-cat.jpg"
         },
     {
       causeID: 19,
       causeName: "International Peace, Security, and Affairs",
-      img: ""
+      img: "/assets/images/security-cat.jpg"
         },
     {
       causeID: 20,
       causeName: "Development and Relief Services",
-      img: ""
+      img: "/assets/images/relief-cat.jpg"
         },
     {
       causeID: 30,
       causeName: "Humanitarian Relief Supplies",
-      img: ""
+      img: "/assets/images/supplies-cat.jpg"
         },
     {
       causeID: 31,
       causeName: "Foreign Charity Support Organizations",
-      img: ""
+      img:"/assets/images/foreign-cat.jpg"
         },
     {
       causeID: 21,
       causeName: "Advocacy and Education",
-      img: ""
+      img: "/assets/images/advocacy-cat.jpg"
         },
     {
       causeID: 25,
       causeName: "Religious Media and Broadcasting",
-      img: ""
+      img: "/assets/images/religious-radio-cat.jpg"
         },
     {
       causeID: 26,
       causeName: "Religious Activities",
-      img: ""
+      img: "/assets/images/pope-cat.jpg"
         },
     {
       causeID: 32,
@@ -142,7 +142,7 @@ export class CardComponent implements OnInit {
     {
       causeID: 2,
       causeName: "Animal Rights, Welfare, and Services",
-      img: ""
+      img: "/assets/images/welfare-cat.jpg"
         },
     {
       causeID: 6,

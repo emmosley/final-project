@@ -1,17 +1,22 @@
 .example-card {
     max-width: 400px;
   }
+  .mat-card-image:first-child {
+    margin-top: 5px;
+  }
   
   .example-header-image {
     background-image: url('https://i.kym-cdn.com/photos/images/original/001/404/852/56a.jpg');
     background-size: cover;
   }
+.app-container {
+  padding: 5%;
+}
 
 .favorite_container{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
 }
 /* .causeImage {
   width: 300px;
