@@ -1,0 +1,25 @@
+.app-container {
+    padding: 0%;
+}
+.table {
+    width: 100%;
+}
+tr { 
+    align-items: baseline;
+}
+a{
+    color: #26408B;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #F45B69;
+}
+
+.goBack {
+    text-align: center;
+}
+
+th {
+    text-align: left;
+}

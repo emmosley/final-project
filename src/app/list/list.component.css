@@ -1,0 +1,37 @@
+.app-container {
+    padding: 2%;
+}
+.table {
+    width: 100%;
+}
+tr { 
+    align-items: baseline;
+}
+
+.favorite {
+    background: transparent;
+    border: none;
+}
+
+.heart {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #F45B69;
+}
+
+.heart:hover {
+    -webkit-text-fill-color: #F45B69;
+}
+
+a{
+    color: #26408B;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #F45B69;
+}
+
+th {
+    text-align: left;
+}

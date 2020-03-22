@@ -11,7 +11,7 @@ body { margin: 0;
 	justify-content: space-around;
     flex-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.324);
-    border: #00a54f;
+    border: #26408B;
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
@@ -58,13 +58,13 @@ body { margin: 0;
 	display: inline-block;
     padding: .5em 1.5em;
     text-decoration: none;
-    color: #00a54f;
+    color: #26408B;
 }
 .main-nav a:hover {
 	display: inline-block;
     padding: .5em 1.5em;
     text-decoration: none;
-    color: #673ab7;
+    color: #F45B69;
 }
 .home-search {
     display: flex;
@@ -74,7 +74,15 @@ body { margin: 0;
 
 }
 
-
+.mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary{
+    background-color: #F45B69;
+}
+.mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary:hover{
+    background-color: #26408B;
+}
+.mat-input-element{
+    color: #F45B69;
+}
 
 @media (min-width: 960px) {
 	.main-header .container {

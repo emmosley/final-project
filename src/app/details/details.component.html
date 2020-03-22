@@ -2,11 +2,11 @@
 
 <div class="app-container">
     <div class="container">
-        
-    </div>
-  
-<h1 class="">Favorited Charities</h1>
-<table>
+      <h2 class="">Favorite Charities</h2> 
+      <div class="goBack" *ngIf="favoriteCharity.length <= 0">No favorites yet! <a routerLink="/causes">Go back</a> to start liking.</div>
+          
+
+<table *ngIf="favoriteCharity.length > 0" class="table">
     <tr>
       <th>Cause</th>
       <th>Name</th>
@@ -22,4 +22,5 @@
       <td>{{ favorite.mailingAddress.stateOrProvince }}</td>
     </tr>
 </table>
+    </div>
 </div>
