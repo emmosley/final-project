@@ -20,7 +20,7 @@ state;
     //   this.data = data;
     //   console.log(this.data);
     // });
-
+   
   }
 
   searchFunction(state) {

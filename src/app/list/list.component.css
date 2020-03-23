@@ -35,3 +35,11 @@ a:hover{
 th {
     text-align: left;
 }
+
+.fullHeart {
+    -webkit-text-fill-color: #F45B69;
+}
+
+.heart.selected {
+    -webkit-text-fill-color: #F45B69;
+}
