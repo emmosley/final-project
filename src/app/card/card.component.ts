@@ -152,72 +152,72 @@ export class CardComponent implements OnInit {
     {
       causeID: 3,
       causeName: "Museums",
-      img: ""
+      img: "/assets/images/museum-cat.jpg"
         },  
     {
       causeID: 4,
       causeName: "Performing Arts",
-      img: ""
+      img: "/assets/images/performing-arts-cat.jpg"
         },
     {
       causeID: 5,
       causeName: "Public Broadcasting and Media",
-      img: ""
+      img: "/assets/images/pbs-cat.jpg"
         },
     {
       causeID: 10,
       causeName: "Botanical Gardens, Parks, and Nature Centers",
-      img: ""
+      img: "/assets/images/botanical-cat.jpg"
         },
     {
       causeID: 11,
       causeName: "Environmental Protection and Conservation",
-      img: ""
+      img: "/assets/images/epa-cat.jpg"
         },
     {
       causeID: 34,
       causeName: "Patient and Family Support",
-      img: ""
+      img: "/assets/images/support-cat.jpg"
         },
     {
       causeID: 13,
       causeName: "Diseases, Disorders, and Disciplines",
-      img: ""
+      img: "/assets/images/sneezing-cat.jpg"
         },
     {
       causeID: 12,
       causeName: "Treatment and Prevention Services",
-      img: ""
+      img: "/assets/images/prevention-cat.jpg"
         },
     {
       causeID: 14,
       causeName: "Medical Research",
-      img: ""
+      img: "/assets/images/research-cat.jpg"
         },
     {
       causeID: 22,
       causeName: "Community Foundations",
-      img: ""
+      img: "/assets/images/community-cat.jpg"
         },
     {
       causeID: 23,
       causeName: "Fundraising",
-      img: ""
+      img: "/assets/images/fundraising-cat.jpg"
         },
     {
       causeID: 27,
       causeName: "Housing and Neighborhood Development",
-      img: ""
+      img: "/assets/images/housing-cat.jpg"
         },
     {
       causeID: 42,
       causeName: "United Ways",
-      img: ""
+      img: "/assets/images/united-way-cat.jpg"
         },
     {
       causeID: 43,
       causeName: "Jewish Federations",
-      img: ""
+      img: "/assets/images/jewish-cat.jpg"
         },    
   ];
   shuffle = (a) => {
