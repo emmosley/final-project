@@ -1,5 +1,10 @@
 .mat-button.mat-warn, .mat-icon-button.mat-warn, .mat-stroked-button.mat-warn{
     color: #F45B69;
+    margin-left: 5px;
+}
+
+.container {
+    align-items: flex-end;
 }
 
 .grow { 
@@ -12,3 +17,4 @@
 .logo {
     width: 30%;
 }
+

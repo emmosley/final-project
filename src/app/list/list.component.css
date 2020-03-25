@@ -1,8 +1,12 @@
+
 .app-container {
     padding: 2%;
 }
 .table {
-    width: 100%;
+    /* width: 100%; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 tr { 
     align-items: baseline;
@@ -42,4 +46,36 @@ th {
 
 .heart.selected {
     -webkit-text-fill-color: #F45B69;
+}
+
+.charityInfo{
+    display: flex;
+    flex-flow: row wrap;
+    outline: 1px solid #cccccc;
+    margin: 5px;
+    width: 30%;
+    text-align: center;
+    flex-direction: column;
+}
+
+.causeName {
+    color: gray;
+    font-size: .8em;
+    justify-content: start;
+}
+
+.charityName {
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .charityInfo {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .charityInfo {
+        width: 60vw;
+    }
 }
