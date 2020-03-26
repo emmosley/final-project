@@ -5,6 +5,10 @@
     <div class="home-search">
       <div class="search">
         <form class="form">
+          <div class="intro">
+            <p>Looking to donate to a charity near you?</p>
+            <p>Enter your state below to get started!</p>
+          </div>
           <mat-form-field class="full-width">
             <mat-label>Enter State</mat-label>
             <input matInput #search placeholder="Enter your State" maxlength="2"  onkeyup="this.value = this.value.toUpperCase();"/>
@@ -13,13 +17,11 @@
             [routerLink]="['/causes']">
             SUBMIT
           </button>
-        </form>
+          </form>
+          <div class="randomChoice"> Don't mind which charity gets your donation?:
+            <button mat-raised-button color="primary" class="takeMoney">Take My Money</button>
       </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="home-search">
-      <button mat-raised-button color="primary">Take My Money</button>
+      </div>
     </div>
   </div>
 </div>

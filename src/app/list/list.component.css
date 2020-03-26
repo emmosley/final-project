@@ -16,6 +16,9 @@ tr {
     border: none;
 }
 
+.favorite:focus {
+    outline: none;
+}
 .heart {
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;

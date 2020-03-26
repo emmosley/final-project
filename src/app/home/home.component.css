@@ -6,3 +6,29 @@ button {
 .mat-form-field-infix{
     color: #F45B69;
 }
+.takeMoney {
+    margin-top: 10px;
+}
+
+.home-search {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    display: block;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0;
+}
+
+.randomChoice {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.form {
+    text-align: center;
+}
