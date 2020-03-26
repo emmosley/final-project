@@ -1,5 +1,6 @@
 button {
    background-color: #F45B69;
+   cursor: pointer;
 }
 
 .mat-form-field-infix{

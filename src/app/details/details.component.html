@@ -6,21 +6,14 @@
       <div class="goBack" *ngIf="favoriteCharity.length <= 0">No favorites yet! <a routerLink="/causes">Go back</a> to start liking.</div>
           
 
-<table *ngIf="favoriteCharity.length > 0" class="table">
-    <tr>
-      <th>Cause</th>
-      <th>Name</th>
-      <th>EIN</th>
-      <th>Website</th>
-      <th>State</th>
-    </tr>
-    <tr *ngFor="let favorite of favoriteCharity, let i = index">
-      <td>{{ favorite.cause.causeName }}</td>
-      <td>{{ favorite.organization.charityName }}</td>
-      <td>{{ favorite.organization.ein }}</td>
-      <td><a href="{{ favorite.websiteURL }}">{{ favorite.organization.charityName }}'s Website</a></td>
-      <td>{{ favorite.mailingAddress.stateOrProvince }}</td>
-    </tr>
-</table>
+<div *ngIf="favoriteCharity.length > 0" class="table">
+  
+    <div *ngFor="let favorite of favoriteCharity, let i = index" class="charityInfo">
+      <div class="causeName">{{ favorite.cause.causeName }}</div>
+    <div class="charityName">{{ favorite.organization.charityName }}</div>
+      <div> EIN #: {{ favorite.organization.ein }}</div>
+          <div>Location: {{ favorite.mailingAddress.stateOrProvince }}</div>
+    <div><a href="{{ favorite.websiteURL }}">Website</a></div>
+      
     </div>
 </div>

@@ -3,7 +3,6 @@
     padding: 2%;
 }
 .table {
-    /* width: 100%; */
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -25,6 +24,7 @@ tr {
 
 .heart:hover {
     -webkit-text-fill-color: #F45B69;
+    cursor: pointer;
 }
 
 a{
@@ -34,6 +34,7 @@ a{
 
 a:hover{
     color: #F45B69;
+    cursor: pointer;
 }
 
 th {
