@@ -26,7 +26,7 @@ export class ListComponent implements OnInit {
     let index = this.favs.charityArray.indexOf(charity);
     this.favs.selectedFavorite.splice(index, 1); 
   }
-    
+  return charity.isFavorited = !charity.isFavorited  
   }
   
 }
