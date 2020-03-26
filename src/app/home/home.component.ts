@@ -16,10 +16,7 @@ state;
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
-    // this.data = this.apiService.getList().subscribe((data) => {
-    //   this.data = data;
-    //   console.log(this.data);
-    // });
+ 
    
   }
 
