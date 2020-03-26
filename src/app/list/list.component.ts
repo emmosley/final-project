@@ -1,3 +1,4 @@
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { Component, OnInit } from '@angular/core';
 import { FavoriteService } from '../favorite.service';
 
@@ -23,12 +24,20 @@ export class ListComponent implements OnInit {
     this.favs.selectedFavorite.push(charity);
     console.log(this.favs.selectedFavorite);
     let index = this.favs.charityArray.indexOf(charity);
+    let activeClass = "heart"
+    if (this.wasClicked === true) {
+      this.wasClicked = false;
+      activeClass = "fullHeart";
+    } else {
+      this.wasClicked = true;
+      activeClass = "heart";
+    }
     this.wasClicked = !this.wasClicked;
-    console.log(this.wasClicked);
-    console.log(index);
+    // console.log(this.wasClicked);
+    // console.log(index);
   }
   onClick() {
-    this.wasClicked = !this.wasClicked;
+    //this.wasClicked = !this.wasClicked;
     console.log(this.wasClicked);
   }
 
