@@ -16,7 +16,7 @@
       <div> EIN #: {{ charity.organization.ein }}</div>
           <div>Location: {{ charity.mailingAddress.stateOrProvince }}</div>
     <div><a href="{{ charity.websiteURL }}">Website</a></div>
-    <button class="favorite"><mat-icon class="heart" (click)="selectFavorite(charity)" [class.selected]="wasClicked" [ngClass]="{heart: wasClicked === false, fullHeart: wasClicked===true}">
+    <button class="favorite"><mat-icon class="heart" (click)="selectFavorite(charity)">
       favorite</mat-icon></button>
     <!-- <td>{{ charity.cause.causeName }}</td>
     <td>{{ charity.organization.charityName }}</td>

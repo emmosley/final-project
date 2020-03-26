@@ -47,6 +47,9 @@ th {
 .heart.selected {
     -webkit-text-fill-color: #F45B69;
 }
+.heart:active {
+    -webkit-text-fill-color: #F45B69;
+}
 
 .charityInfo{
     display: flex;

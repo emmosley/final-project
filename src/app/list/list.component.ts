@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FavoriteService } from '../favorite.service';
+import { ɵINTERNAL_BROWSER_DYNAMIC_PLATFORM_PROVIDERS } from '@angular/platform-browser-dynamic';
 
 @Component({
   selector: 'app-list',
@@ -25,10 +26,7 @@ export class ListComponent implements OnInit {
     let index = this.favs.charityArray.indexOf(charity);
     this.favs.selectedFavorite.splice(index, 1); 
   }
-    this.wasClicked = !this.wasClicked;
-    console.log(this.wasClicked);
-    console.log(index);
+    
   }
   
-
 }
