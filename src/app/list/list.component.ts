@@ -8,7 +8,7 @@ import { FavoriteService } from '../favorite.service';
 })
 export class ListComponent implements OnInit {
   likedCharities = [];
-  selectedFavorite = [];
+  // selectedFavorite = [];
   wasClicked = false;
   constructor(public favs: FavoriteService) { }
 
@@ -19,17 +19,16 @@ export class ListComponent implements OnInit {
  
 
   selectFavorite(charity) {
-    this.selectedFavorite = this.favs.selectedFavorite;
-    this.favs.selectedFavorite.push(charity);
-    console.log(this.favs.selectedFavorite);
+    if (!this.favs.selectedFavorite.includes(charity)) {
+       this.favs.selectedFavorite.push(charity); 
+    } else {
     let index = this.favs.charityArray.indexOf(charity);
+    this.favs.selectedFavorite.splice(index, 1); 
+  }
     this.wasClicked = !this.wasClicked;
     console.log(this.wasClicked);
     console.log(index);
   }
-  onClick() {
-    this.wasClicked = !this.wasClicked;
-    console.log(this.wasClicked);
-  }
+  
 
 }
